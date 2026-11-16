@@ -1,0 +1,96 @@
+{
+  "archive_sha256": "0a64eff5be87f48c3dbbfc0a12a56c5d5b5167ef8e61cd45d69b3e7c7130c06f",
+  "arff_sha256": "b2a4a76a2aedfb8ed415adfc1bfc70b5f202cb00cb72e500766e364c14834014",
+  "rows": 13611,
+  "predictors": [
+    "Area",
+    "Perimeter",
+    "MajorAxisLength",
+    "MinorAxisLength",
+    "AspectRation",
+    "Eccentricity",
+    "ConvexArea",
+    "EquivDiameter",
+    "Extent",
+    "Solidity",
+    "roundness",
+    "Compactness",
+    "ShapeFactor1",
+    "ShapeFactor2",
+    "ShapeFactor3",
+    "ShapeFactor4"
+  ],
+  "class_counts": {
+    "BARBUNYA": 1322,
+    "BOMBAY": 522,
+    "CALI": 1630,
+    "DERMASON": 3546,
+    "HOROZ": 1928,
+    "SEKER": 2027,
+    "SIRA": 2636
+  },
+  "missing_cells": 0,
+  "nonfinite_cells": 0,
+  "constant_features": [],
+  "extra_exact_vectors": 68,
+  "duplicate_rows_involved": 136,
+  "unique_vectors": 13543,
+  "duplicate_extra_class": "HOROZ",
+  "conflicting_group_labels": 0,
+  "formula_max_absolute_errors": {
+    "AspectRation": 8.881784197001252e-16,
+    "EquivDiameter": 1.1368683772161603e-13,
+    "Solidity": 1.1102230246251565e-16,
+    "roundness": 5.551115123125783e-16,
+    "Compactness": 3.3306690738754696e-16
+  },
+  "splits": [
+    {
+      "partition": "train",
+      "rows": 8163,
+      "groups": 8121,
+      "class_counts": {
+        "BARBUNYA": 792,
+        "BOMBAY": 312,
+        "CALI": 978,
+        "DERMASON": 2127,
+        "HOROZ": 1158,
+        "SEKER": 1215,
+        "SIRA": 1581
+      }
+    },
+    {
+      "partition": "validation",
+      "rows": 2725,
+      "groups": 2710,
+      "class_counts": {
+        "BARBUNYA": 265,
+        "BOMBAY": 105,
+        "CALI": 326,
+        "DERMASON": 709,
+        "HOROZ": 387,
+        "SEKER": 406,
+        "SIRA": 527
+      }
+    },
+    {
+      "partition": "test",
+      "rows": 2723,
+      "groups": 2712,
+      "class_counts": {
+        "BARBUNYA": 265,
+        "BOMBAY": 105,
+        "CALI": 326,
+        "DERMASON": 710,
+        "HOROZ": 383,
+        "SEKER": 406,
+        "SIRA": 528
+      }
+    }
+  ],
+  "transformations": [
+    "No joins, imputations, exclusions, or feature renames",
+    "Exact-vector grouping for separation, not row deletion",
+    "StandardScaler fitted within training folds for logistic regression only"
+  ]
+}

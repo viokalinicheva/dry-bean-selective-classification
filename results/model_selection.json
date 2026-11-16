@@ -1,0 +1,16 @@
+{
+  "selected": {
+    "id": "LR_C100",
+    "kind": "logistic",
+    "C": 100.0,
+    "tie_rank": [
+      0,
+      100.0,
+      0
+    ]
+  },
+  "best_mean_macro_f1": 0.9365989830198217,
+  "eligible_candidates": 8,
+  "cv_fits_including_baseline": 45,
+  "selected_using": "Training-only five-fold grouped macro-F1"
+}

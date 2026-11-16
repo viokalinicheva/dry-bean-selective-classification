@@ -1,0 +1,22 @@
+{
+  "rows": 2723,
+  "groups": 2712,
+  "full_coverage": {
+    "accuracy": 0.9269188395152406,
+    "macro_f1": 0.9392476089730906,
+    "macro_recall": 0.9384724819088281
+  },
+  "baseline": {
+    "accuracy": 0.2607418288652222,
+    "macro_f1": 0.05909034164204569,
+    "macro_recall": 0.14285714285714285
+  },
+  "accepted": 2536,
+  "referred": 187,
+  "accepted_errors": 124,
+  "total_errors": 199,
+  "referred_errors": 75,
+  "coverage": 0.9313257436650753,
+  "accepted_error": 0.04889589905362776,
+  "observed_target_met": true
+}

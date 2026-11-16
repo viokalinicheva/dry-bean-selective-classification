@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-11-09T21:13:48.626923+00:00",
+  "freeze_sha256": "7bc509b0532d1688bf8a31838a7dd8ad07016a60ba5b24e04adca694af7cb5ce",
+  "model_sha256": "56fdd7d99512eaaffbc4e34d6b048da5d220b0f4733a440d3757a81f7e042722",
+  "cache_sha256": "dbdb08738f8bb4b62fd90e7cf6a6befdf9d9cd1856f09eec3572ad30272f92b4",
+  "rows": 2723,
+  "prediction_batch": "Selected model and training-majority baseline only"
+}

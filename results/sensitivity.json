@@ -1,0 +1,47 @@
+{
+  "primary_row_weighted": {
+    "rows": 2723,
+    "groups": 2712,
+    "full_coverage": {
+      "accuracy": 0.9269188395152406,
+      "macro_f1": 0.9392476089730906,
+      "macro_recall": 0.9384724819088281
+    },
+    "baseline": {
+      "accuracy": 0.2607418288652222,
+      "macro_f1": 0.05909034164204569,
+      "macro_recall": 0.14285714285714285
+    },
+    "accepted": 2536,
+    "referred": 187,
+    "accepted_errors": 124,
+    "total_errors": 199,
+    "referred_errors": 75,
+    "coverage": 0.9313257436650753,
+    "accepted_error": 0.04889589905362776,
+    "observed_target_met": true
+  },
+  "one_per_vector": {
+    "rows": 2712,
+    "groups": 2712,
+    "full_coverage": {
+      "accuracy": 0.926622418879056,
+      "macro_f1": 0.9390940120115177,
+      "macro_recall": 0.9383290993641991
+    },
+    "baseline": {
+      "accuracy": 0.2617994100294985,
+      "macro_f1": 0.05928028721716623,
+      "macro_recall": 0.14285714285714285
+    },
+    "accepted": 2525,
+    "referred": 187,
+    "accepted_errors": 124,
+    "total_errors": 199,
+    "referred_errors": 75,
+    "coverage": 0.931047197640118,
+    "accepted_error": 0.04910891089108911,
+    "observed_target_met": true
+  },
+  "interpretation": "Evaluation weighting only; frozen model and threshold unchanged. Not a training sensitivity."
+}

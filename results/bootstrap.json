@@ -1,0 +1,38 @@
+{
+  "replicates": 2000,
+  "seed": 68003,
+  "method": "Unstratified whole-feature-group resampling with member-row multiplicity",
+  "scope": "Conditional on fitted model and validation-selected rule; internal collection only",
+  "intervals": {
+    "macro_f1": {
+      "lower": 0.9304440272792269,
+      "upper": 0.9470616710654435,
+      "undefined_replicates": 0
+    },
+    "accuracy": {
+      "lower": 0.9164204684459609,
+      "upper": 0.9360058845163663,
+      "undefined_replicates": 0
+    },
+    "macro_recall": {
+      "lower": 0.9293753182540925,
+      "upper": 0.9465714903498759,
+      "undefined_replicates": 0
+    },
+    "macro_f1_gain_over_majority": {
+      "lower": 0.8708416407693906,
+      "upper": 0.8888865873622906,
+      "undefined_replicates": 0
+    },
+    "coverage": {
+      "lower": 0.9215786777322826,
+      "upper": 0.9408957415565345,
+      "undefined_replicates": 0
+    },
+    "accepted_error": {
+      "lower": 0.04083155083796921,
+      "upper": 0.057778308967863665,
+      "undefined_replicates": 0
+    }
+  }
+}

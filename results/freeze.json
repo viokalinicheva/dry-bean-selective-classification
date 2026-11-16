@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-11-09T21:13:48.593236+00:00",
+  "selected": {
+    "id": "LR_C100",
+    "kind": "logistic",
+    "C": 100.0,
+    "tie_rank": [
+      0,
+      100.0,
+      0
+    ]
+  },
+  "training_rows": 8163,
+  "validation_rows": 2725,
+  "policy": {
+    "status": "threshold",
+    "threshold": 0.6584236272363831,
+    "accepted": 2500,
+    "errors": 125,
+    "coverage": 0.9174311926605505,
+    "accepted_error": 0.05
+  },
+  "model_sha256": "56fdd7d99512eaaffbc4e34d6b048da5d220b0f4733a440d3757a81f7e042722",
+  "protocol_sha256": "e06395a55ee637ff989fc26ea582138dceca082c93d9df543c8cf5263b303039",
+  "test_predictions_created": false,
+  "note": "Frozen before first test prediction. No train-plus-validation refit."
+}
