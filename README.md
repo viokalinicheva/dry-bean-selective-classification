@@ -35,7 +35,7 @@ The validation-selected rule met the **observed aggregate** 5% error criterion o
 - **Repeated vectors:** 68 extra identical vectors, all HOROZ. I retained every row and kept identical 16-feature vectors together across partitions and training folds.
 - **Preparation:** no joins, imputation, row deletion, relabeling, unit conversion, or feature selection. Logistic-regression scaling was learned inside each training fold.
 
-The unchanged source archive is included under `data/raw/` under **CC BY 4.0**. Its SHA-256 is `0a64eff5be87f48c3dbbfc0a12a56c5d5b5167ef8e61cd45d69b3e7c7130c06f`. Original feature spellings, including `AspectRation` and `roundness`, are preserved. See [dataset notes](data/README.md) for provenance and rights boundaries.
+The unchanged source archive is included in `data/raw/` under **CC BY 4.0**. Its SHA-256 is `0a64eff5be87f48c3dbbfc0a12a56c5d5b5167ef8e61cd45d69b3e7c7130c06f`. Original feature spellings, including `AspectRation` and `roundness`, are preserved. See [dataset notes](data/README.md) for provenance and rights boundaries.
 
 ## Method
 
@@ -110,7 +110,7 @@ LICENSE                      MIT license for original code and documentation
 
 The classifier distinguishes labels within the supplied imaging collection. It does **not** establish performance across new farms, cameras, harvests, or batches: those identifiers and original images are absent. Exact-vector grouping is a pragmatic safeguard, not proof of independent biological observations.
 
-The uncertainty intervals condition on the fitted model and frozen rule; they do not include model-search, fitting, threshold-selection, or unknown batch uncertainty. Referring 187 cases withheld 75 erroneous and 112 otherwise-correct predictions. Human corrections, review time, costs, and labor savings were not measured. BOMBAY's zero errors in 105 held-out cases is not proof of zero future risk.
+The uncertainty intervals condition on the fitted model and frozen rule; they do not include model-search, fitting, threshold-selection, or unknown batch uncertainty. Among the 187 cases referred for review, 75 model predictions were incorrect and 112 were correct. Those predictions were not assigned automatically. Human corrections, review time, costs, and labor savings were not measured. The absence of BOMBAY errors in 105 held-out cases is not proof of zero future risk.
 
 Before considering operational use, I would collect authorized independent batch-level data, confirm measurement/label definitions, agree on class-specific tolerances and reviewer capacity, and evaluate actual review outcomes. This project does not certify food safety, seed health, quality, or authenticity, and no causal claim is made.
 
