@@ -1,0 +1,20 @@
+{
+  "status": "Prespecified before Milestone 2 candidate fitting or final-test predictions",
+  "specified_local_date": "2026-11-09",
+  "source_arff_sha256": "b2a4a76a2aedfb8ed415adfc1bfc70b5f202cb00cb72e500766e364c14834014",
+  "source_archive_sha256": "0a64eff5be87f48c3dbbfc0a12a56c5d5b5167ef8e61cd45d69b3e7c7130c06f",
+  "outer_split": {"seed": 680, "algorithm": "Exact Milestone 1: class-sorted unique-vector groups, default_rng shuffle, array_split into 5; fold0=test, fold1=threshold_validation, folds2-4=train", "rows": [8163, 2725, 2723]},
+  "inner_cv": {"method": "StratifiedGroupKFold", "folds": 5, "shuffle": true, "seed": 68002},
+  "candidate_grid": {
+    "logistic": {"preparation": "StandardScaler fitted within each fold", "C": [0.1, 1.0, 10.0, 100.0], "solver": "lbfgs", "max_iter": 2000, "tol": 0.0001, "class_weight": null},
+    "random_forest": {"n_estimators": 200, "max_depth": [8, 12], "min_samples_leaf": [2, 5], "max_features": "sqrt", "bootstrap": true, "class_weight": null, "random_state": 68002, "n_jobs": 1}
+  },
+  "baseline": "Training-majority DummyClassifier, not eligible for selecting the candidate model",
+  "selection": "Maximal mean inner-fold macro-F1; ties within 1e-12 prefer logistic then smaller C; forest ties prefer smaller depth then larger leaves. No model choice uses threshold-validation or test metrics.",
+  "referral": {"score": "Maximum class score, not claimed calibrated probability", "acceptance": "score >= full-precision threshold", "candidates": "0.0 plus each distinct validation score; complete score ties", "feasible": "accepted_count > 0 and 20 * accepted_errors <= accepted_count", "choice": "Greatest accepted count, then smallest numeric cutoff; exhaustive scan because risk need not be monotonic", "no_feasible": "Explicit refer_all, null threshold, zero coverage and undefined conditional error"},
+  "test": "Freeze fitted training-only model and validation policy before one final evaluation batch. Save a prediction table and derive every later test result/figure from that cache. Do not predict unselected candidates on test or refit on train plus validation.",
+  "bootstrap": {"replicates": 2000, "seed": 68003, "method": "Unstratified resampling of whole exact-feature groups with replacement, retaining all member-row multiplicities; frozen model and threshold; paired baseline comparison", "interval": "2.5th and 97.5th percentiles; undefined conditional-error replicates counted and excluded only from that interval", "scope": "Conditional internal-collection uncertainty, not training/threshold-search uncertainty or external batch generalization"},
+  "sensitivity": "One-record-per-vector evaluation weighting using the same cached test predictions and frozen policy. No alternate test-tuned model. This does not test the training effect of duplicate retention.",
+  "figures": ["Class support and training-only morphology", "Training-only grouped CV comparison", "Held-out confusion matrix", "Validation error-coverage curve with frozen held-out operating point", "Held-out per-variety referral burden and accepted errors"],
+  "prohibited_claims": ["5 percent population guarantee", "industry-approved tolerance", "calibrated scores without calibration testing", "human corrections or labor/cost savings", "new-farm or camera generalization", "food safety or seed health certification"]
+}

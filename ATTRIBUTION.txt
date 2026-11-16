@@ -1,0 +1,45 @@
+SOURCE DATA
+Dry bean [Data set]. (2020). UCI Machine Learning Repository.
+https://doi.org/10.24432/C50S4B
+https://archive.ics.uci.edu/dataset/602/dry+bean+dataset
+Downloaded November 3, 2026; documentation/license checked November 9, 2026.
+License: Creative Commons Attribution 4.0 International (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+
+The original archive and included source README are preserved unchanged. The
+dataset's license does not establish the same license for the journal article
+or source photographs. No original seed photographs are supplied in the analysis.
+
+The archive requests citation of:
+Köklü, M., & Özkan, I. A. (2020). Multiclass classification of dry beans using
+computer vision and machine learning techniques. Computers and Electronics in
+Agriculture, 174, Article 105507.
+https://doi.org/10.1016/j.compag.2020.105507
+Author-hosted abstract reviewed; full publisher methods were not verified.
+
+NEW DERIVED WORK
+Violetta Kalinicheva, Dry Bean Classification, November 2026. New analysis products
+include exact-vector grouping, partition metadata, fitted models, prediction
+caches, metrics, bootstrap draws, evaluation-weight sensitivity, figures, and
+written interpretation. No source rows/features were deleted, relabeled,
+imputed, joined, or unit-converted. Fold-local StandardScaler transformation is
+used for logistic regression only. These changes do not imply endorsement by
+the data creators, UCI, or cited authors.
+
+Original project code and documentation are licensed under the MIT License in
+LICENSE. This does not relicense the source dataset. The preserved UCI dataset
+remains subject to CC BY 4.0, including its attribution and change notices.
+The frozen protocol retains its original milestone labels because changing its
+bytes would invalidate the published model/prediction provenance chain.
+
+METHODOLOGICAL CONTEXT
+Geifman, Y., & El-Yaniv, R. (2017). Selective classification for deep neural
+networks. Advances in Neural Information Processing Systems, 30, 4878–4887.
+https://arxiv.org/abs/1705.08500
+Only the error–coverage framing is used, not the formal SGR risk guarantee.
+
+Official scikit-learn documentation checked November 9, 2026:
+https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedGroupKFold.html
+https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
+https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html
+https://scikit-learn.org/stable/modules/calibration.html
